@@ -1,0 +1,37 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace = 'me.s1204.benesse.touch.checkpen'
+    compileSdk = 35
+
+    defaultConfig {
+        minSdk = 28
+        //noinspection ExpiredTargetSdkVersion,EditedTargetSdkVersion
+        targetSdk = 28
+        versionCode = 1
+        versionName = "1.0.0"
+        proguardFiles += 'proguard-rules.pro'
+        multiDexEnabled = false
+    }
+
+    buildTypes {
+        configureEach {
+            signingConfig = signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+
+    lintOptions {
+        ignore "ClickableViewAccessibility", "DiscouragedApi"
+    }
+}
+
+dependencies {
+    compileOnly files('libs/BenesseExtension.jar')
+}

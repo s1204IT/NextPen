@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NextPen</string>
+    <string name="check_activity">ペンの電池残量</string>
+    <string name="error_message">この端末はサポートされていません</string>
+</resources>
