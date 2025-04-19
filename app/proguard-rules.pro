@@ -1,2 +1,3 @@
 -dontobfuscate
 -keepparameternames
+-keep class android.os.BenesseExtension.*

@@ -12,12 +12,13 @@ import android.widget.Toast;
 import me.s1204.benesse.touch.checkpen.R;
 
 public class CheckPenBatteryActivity extends Activity {
-    private static final String BC_FTS_PEN_BATTERY = "bc:pen:battery";
+
+    private static final int BATTERY_UNACQUIRED = 0;
     private static final int BATTERY_EXTREMELY_LOW = 1;
-    private static final int BATTERY_FULL = 4;
     private static final int BATTERY_LOW = 2;
     private static final int BATTERY_MEDIUM = 3;
-    private static final int BATTERY_UNACQUIRED = 0;
+    private static final int BATTERY_FULL = 4;
+    private static final String BC_FTS_PEN_BATTERY = "bc:pen:battery";
 
     @Deprecated
     @Override
